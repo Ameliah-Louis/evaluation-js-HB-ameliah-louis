@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma bibliothèque</title>
+  <link rel="stylesheet" href="/style.e308ff8e.css"> <!-- Le fichier CSS -->
+<script src="/style.e308ff8e.js"></script></head>
+<body>
+
+    <!-- Sélecteur de couleur -->
+    <div class="color-selector">
+    <!-- Options de couleur -->
+    <span class="color-option" data-color="#71ca71"></span>
+    <span class="color-option" data-color="#86b4e5"></span>
+    <span class="color-option" data-color="#d10000"></span>
+    <span class="color-option" data-color="#ffe8b3"></span>
+    <span class="color-option" data-color="#f08080"></span>
+    </div>
+
+    <div class="containerForm"> <!-- Conteneur principal du formulaire -->
+        <div class="formTitle">
+            <h1>Ma bibliothèque</h1> <!-- Titre de la page -->
+        </div> 
+        <div class="formChamps">
+            <form id="livre-form"> <!-- Formulaire pour ajouter un livre -->
+                <label for="titre">Titre:</label> <!-- Champ pour le titre du livre -->
+                <input type="text" id="titre" required="" placeholder="Entrez le titre du livre">
+                <br>
+                <label for="auteur">Auteurice:</label> <!-- Champ pour l'auteur du livre -->
+                <input type="text" id="auteur" required="" placeholder="Entrez le nom de l'Auteurice">
+                <br>
+                <label for="image">URL de l'image de couverture:</label> <!-- Champ pour l'URL de l'image -->
+                <input type="text" id="image" required="" placeholder="Entrez l'URL de l'image de couverture">
+                <br>
+                <label for="resume">Résumé:</label> <!-- Champ pour le résumé du livre -->
+                <br>
+                <textarea type="text" id="resume" required="" placeholder="Entrez un court résumé"></textarea>
+                <br>
+                <button type="submit">Ajouter le livre</button> <!-- Bouton pour soumettre le formulaire -->
+            </form>
+            <div id="livre-liste"></div> <!-- Conteneur pour afficher les livres ajoutés -->
+        </div>      
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> <!-- La bibliothèque jQuery -->
+    <script src="/script.75da7f30.js"></script> <!-- Le fichier JavaScript -->
+</body>
+</html>
